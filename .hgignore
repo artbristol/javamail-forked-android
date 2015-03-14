@@ -18,3 +18,5 @@
 /CClassHeaders/
 /obj/
 /obj_g/
+^\.idea/
+*\.iml
