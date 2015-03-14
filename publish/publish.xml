@@ -51,12 +51,12 @@
 	<!-- include the main javax.mail.jar file -->
 	<dependencySet>
 	    <includes>
-		<include>com.sun.mail:javax.mail</include>
+		<include>eu.ocathain.com.sun.mail:javax.mail</include>
 	    </includes>
 	    <useTransitiveDependencies>false</useTransitiveDependencies>
 	    <unpack>false</unpack>
 	    <outputFileNameMapping>
-		javax.mail.jar
+		eu.ocathain.javax.mail.jar
 	    </outputFileNameMapping>
 	</dependencySet>
     </dependencySets>

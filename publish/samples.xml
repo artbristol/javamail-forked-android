@@ -97,7 +97,7 @@
 	<!--
 	<dependencySet>
 	    <includes>
-		<include>com.sun.mail:demo:jar:sources</include>
+		<include>eu.ocathain.com.sun.mail:demo:jar:sources</include>
 	    </includes>
 	    <unpack>true</unpack>
 	</dependencySet>
