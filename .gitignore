@@ -18,3 +18,5 @@ build/solaris/report.out
 CClassHeaders/
 obj/
 obj_g/
+.idea/
+*.iml
