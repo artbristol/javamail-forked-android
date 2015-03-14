@@ -58,7 +58,7 @@
 	<version>1.5.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>javax.mail</groupId>
+    <groupId>eu.ocathain.javax.mail</groupId>
     <artifactId>javax.mail-api</artifactId>
     <packaging>jar</packaging>
     <name>JavaMail API jar</name>
