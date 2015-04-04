@@ -60,14 +60,14 @@
     <url>http://javamail.java.net</url>
 
     <scm>
-	<connection>scm:hg:http://java.net/hg/javamail~mercurial</connection>
-	<developerConnection>scm:hg:https://java.net/hg/javamail~mercurial</developerConnection>
-	<url>http://java.net/hg/javamail~mercurial</url>
+	<connection>scm:hg:https://bitbucket.org/artbristol/javamail-forked-android</connection>
+	<developerConnection>scm:hg:ssh://hg@bitbucket.org/artbristol/javamail-forked-android</developerConnection>
+	<url>https://bitbucket.org/artbristol/javamail-forked-android</url>
     </scm>
 
     <issueManagement>
-	<system>Bugzilla</system>
-	<url>http://kenai.com/bugzilla</url>
+	<system>Bitbucket</system>
+	<url>https://bitbucket.org/artbristol/javamail-forked-android</url>
     </issueManagement>
 
     <licenses>
@@ -78,11 +78,6 @@
 	<comments>CDDL or GPL version 2 plus the Classpath Exception</comments>
       </license>
     </licenses>
-
-    <organization>
-	<name>Oracle</name>
-	<url>http://www.oracle.com</url>
-    </organization>
 
     <properties>
 	<mail.version>1.5.2</mail.version>
@@ -144,6 +139,12 @@
 		<role>lead</role>
 	    </roles>
 	</developer>
+		<developer>
+			<name>Art O Cathain</name>
+			<email>art.home@gmail.com</email>
+			<organization>None</organization>
+			<organizationUrl>https://github.com/artbristol</organizationUrl>
+		</developer>
     </developers>
 
     <!-- following to enable use of "mvn site:stage" -->
