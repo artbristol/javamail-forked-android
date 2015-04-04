@@ -49,7 +49,7 @@ import java.net.*;
 import java.util.*;
 import java.util.logging.*;
 import java.util.logging.Formatter;
-import javax.activation.*;
+import eu.ocathain.javax.activation.*;
 import javax.mail.*;
 import javax.mail.Authenticator;
 import javax.mail.PasswordAuthentication;
@@ -314,7 +314,9 @@ public class MailHandlerTest {
                 k = k.getComponentType();
             }
 
-            if (!k.isPrimitive() && !k.getName().startsWith("java.")
+            boolean isStaticOrFinal = Modifier.isFinal(k.getModifiers()) || Modifier.isStatic(k.getModifiers());
+
+            if (isStaticOrFinal && !k.isPrimitive() && !k.getName().startsWith("java.")
                     && !k.getName().startsWith("javax.")) {
                 fail(f.toString());
             }
@@ -6606,7 +6608,7 @@ public class MailHandlerTest {
 
         private boolean isDataTypeError(String m) {
             if (m != null) {
-                return m.contains("javax.activation.UnsupportedDataTypeException");
+                return m.contains("eu.ocathain.javax.activation.UnsupportedDataTypeException");
             }
             return false;
         }

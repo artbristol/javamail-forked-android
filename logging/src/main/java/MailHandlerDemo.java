@@ -40,7 +40,7 @@ import java.io.PrintStream;
 import java.lang.management.ManagementFactory;
 import java.util.*;
 import java.util.logging.*;
-import javax.activation.DataHandler;
+import eu.ocathain.javax.activation.DataHandler;
 import javax.mail.MessagingException;
 import javax.mail.Session;
 import javax.mail.internet.InternetAddress;

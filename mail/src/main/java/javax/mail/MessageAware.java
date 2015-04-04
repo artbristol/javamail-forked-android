@@ -46,8 +46,8 @@ package javax.mail;
  * message context in which the data content object is operating.
  *
  * @see javax.mail.MessageContext
- * @see javax.activation.DataSource
- * @see javax.activation.DataContentHandler
+ * @see eu.ocathain.javax.activation.DataSource
+ * @see eu.ocathain.javax.activation.DataContentHandler
  * @since	JavaMail 1.1
  */
 public interface MessageAware {

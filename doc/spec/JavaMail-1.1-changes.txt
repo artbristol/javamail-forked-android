@@ -45,8 +45,8 @@ The MessageContext class provides the basic information about the
  * context in which a data content object is operating.
  *
  * @see javax.mail.MessageAware
- * @see javax.activation.DataSource
- * @see javax.activation.DataContentHandler
+ * @see eu.ocathain.javax.activation.DataSource
+ * @see eu.ocathain.javax.activation.DataContentHandler
  */
 public class MessageContext {
 
@@ -90,8 +90,8 @@ DataSource that also implements the MessageAware interface:
  * message context in which the data content object is operating.
  *
  * @see javax.mail.MessageContext
- * @see javax.activation.DataSource
- * @see javax.activation.DataContentHandler
+ * @see eu.ocathain.javax.activation.DataSource
+ * @see eu.ocathain.javax.activation.DataContentHandler
  */
 public interface MessageAware {
     /**

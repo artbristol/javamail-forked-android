@@ -300,7 +300,7 @@ meth public void setParent(javax.mail.Part)
 supr java.lang.Object
 
 CLSS public abstract interface javax.mail.MultipartDataSource
-intf javax.activation.DataSource
+intf eu.ocathain.javax.activation.DataSource
 meth public abstract int getCount()
 meth public abstract javax.mail.BodyPart getBodyPart(int) throws javax.mail.MessagingException
 
@@ -326,12 +326,12 @@ meth public abstract java.lang.String[] getHeader(java.lang.String) throws javax
 meth public abstract java.util.Enumeration getAllHeaders() throws javax.mail.MessagingException
 meth public abstract java.util.Enumeration getMatchingHeaders(java.lang.String[]) throws javax.mail.MessagingException
 meth public abstract java.util.Enumeration getNonMatchingHeaders(java.lang.String[]) throws javax.mail.MessagingException
-meth public abstract javax.activation.DataHandler getDataHandler() throws javax.mail.MessagingException
+meth public abstract eu.ocathain.javax.activation.DataHandler getDataHandler() throws javax.mail.MessagingException
 meth public abstract void addHeader(java.lang.String,java.lang.String) throws javax.mail.MessagingException
 meth public abstract void removeHeader(java.lang.String) throws javax.mail.MessagingException
 meth public abstract void setContent(java.lang.Object,java.lang.String) throws javax.mail.MessagingException
 meth public abstract void setContent(javax.mail.Multipart) throws javax.mail.MessagingException
-meth public abstract void setDataHandler(javax.activation.DataHandler) throws javax.mail.MessagingException
+meth public abstract void setDataHandler(eu.ocathain.javax.activation.DataHandler) throws javax.mail.MessagingException
 meth public abstract void setDescription(java.lang.String) throws javax.mail.MessagingException
 meth public abstract void setDisposition(java.lang.String) throws javax.mail.MessagingException
 meth public abstract void setFileName(java.lang.String) throws javax.mail.MessagingException
@@ -835,7 +835,7 @@ cons public init(java.io.InputStream) throws javax.mail.MessagingException
 cons public init(javax.mail.internet.InternetHeaders,byte[]) throws javax.mail.MessagingException
 fld protected byte[] content
 fld protected java.io.InputStream contentStream
-fld protected javax.activation.DataHandler dh
+fld protected eu.ocathain.javax.activation.DataHandler dh
 fld protected javax.mail.internet.InternetHeaders headers
 intf javax.mail.internet.MimePart
 meth protected java.io.InputStream getContentStream() throws javax.mail.MessagingException
@@ -862,7 +862,7 @@ meth public java.util.Enumeration getMatchingHeaderLines(java.lang.String[]) thr
 meth public java.util.Enumeration getMatchingHeaders(java.lang.String[]) throws javax.mail.MessagingException
 meth public java.util.Enumeration getNonMatchingHeaderLines(java.lang.String[]) throws javax.mail.MessagingException
 meth public java.util.Enumeration getNonMatchingHeaders(java.lang.String[]) throws javax.mail.MessagingException
-meth public javax.activation.DataHandler getDataHandler() throws javax.mail.MessagingException
+meth public eu.ocathain.javax.activation.DataHandler getDataHandler() throws javax.mail.MessagingException
 meth public void addHeader(java.lang.String,java.lang.String) throws javax.mail.MessagingException
 meth public void addHeaderLine(java.lang.String) throws javax.mail.MessagingException
 meth public void attachFile(java.io.File) throws java.io.IOException,javax.mail.MessagingException
@@ -875,7 +875,7 @@ meth public void setContent(javax.mail.Multipart) throws javax.mail.MessagingExc
 meth public void setContentID(java.lang.String) throws javax.mail.MessagingException
 meth public void setContentLanguage(java.lang.String[]) throws javax.mail.MessagingException
 meth public void setContentMD5(java.lang.String) throws javax.mail.MessagingException
-meth public void setDataHandler(javax.activation.DataHandler) throws javax.mail.MessagingException
+meth public void setDataHandler(eu.ocathain.javax.activation.DataHandler) throws javax.mail.MessagingException
 meth public void setDescription(java.lang.String) throws javax.mail.MessagingException
 meth public void setDescription(java.lang.String,java.lang.String) throws javax.mail.MessagingException
 meth public void setDisposition(java.lang.String) throws javax.mail.MessagingException
@@ -900,7 +900,7 @@ fld protected boolean modified
 fld protected boolean saved
 fld protected byte[] content
 fld protected java.io.InputStream contentStream
-fld protected javax.activation.DataHandler dh
+fld protected eu.ocathain.javax.activation.DataHandler dh
 fld protected javax.mail.Flags flags
 fld protected javax.mail.internet.InternetHeaders headers
 innr public static RecipientType
@@ -938,7 +938,7 @@ meth public java.util.Enumeration getMatchingHeaderLines(java.lang.String[]) thr
 meth public java.util.Enumeration getMatchingHeaders(java.lang.String[]) throws javax.mail.MessagingException
 meth public java.util.Enumeration getNonMatchingHeaderLines(java.lang.String[]) throws javax.mail.MessagingException
 meth public java.util.Enumeration getNonMatchingHeaders(java.lang.String[]) throws javax.mail.MessagingException
-meth public javax.activation.DataHandler getDataHandler() throws javax.mail.MessagingException
+meth public eu.ocathain.javax.activation.DataHandler getDataHandler() throws javax.mail.MessagingException
 meth public javax.mail.Address getSender() throws javax.mail.MessagingException
 meth public javax.mail.Address[] getAllRecipients() throws javax.mail.MessagingException
 meth public javax.mail.Address[] getFrom() throws javax.mail.MessagingException
@@ -958,7 +958,7 @@ meth public void setContent(javax.mail.Multipart) throws javax.mail.MessagingExc
 meth public void setContentID(java.lang.String) throws javax.mail.MessagingException
 meth public void setContentLanguage(java.lang.String[]) throws javax.mail.MessagingException
 meth public void setContentMD5(java.lang.String) throws javax.mail.MessagingException
-meth public void setDataHandler(javax.activation.DataHandler) throws javax.mail.MessagingException
+meth public void setDataHandler(eu.ocathain.javax.activation.DataHandler) throws javax.mail.MessagingException
 meth public void setDescription(java.lang.String) throws javax.mail.MessagingException
 meth public void setDescription(java.lang.String,java.lang.String) throws javax.mail.MessagingException
 meth public void setDisposition(java.lang.String) throws javax.mail.MessagingException
@@ -993,9 +993,9 @@ hfds serialVersionUID
 CLSS public javax.mail.internet.MimeMultipart
 cons public init()
 cons public init(java.lang.String)
-cons public init(javax.activation.DataSource) throws javax.mail.MessagingException
+cons public init(eu.ocathain.javax.activation.DataSource) throws javax.mail.MessagingException
 fld protected boolean parsed
-fld protected javax.activation.DataSource ds
+fld protected eu.ocathain.javax.activation.DataSource ds
 meth protected javax.mail.internet.InternetHeaders createInternetHeaders(java.io.InputStream) throws javax.mail.MessagingException
 meth protected javax.mail.internet.MimeBodyPart createMimeBodyPart(java.io.InputStream) throws javax.mail.MessagingException
 meth protected javax.mail.internet.MimeBodyPart createMimeBodyPart(javax.mail.internet.InternetHeaders,byte[]) throws javax.mail.MessagingException
@@ -1036,7 +1036,7 @@ meth public abstract void setText(java.lang.String,java.lang.String,java.lang.St
 CLSS public javax.mail.internet.MimePartDataSource
 cons public init(javax.mail.internet.MimePart)
 fld protected javax.mail.internet.MimePart part
-intf javax.activation.DataSource
+intf eu.ocathain.javax.activation.DataSource
 intf javax.mail.MessageAware
 meth public java.io.InputStream getInputStream() throws java.io.IOException
 meth public java.io.OutputStream getOutputStream() throws java.io.IOException
@@ -1059,8 +1059,8 @@ meth public static java.lang.String encodeWord(java.lang.String) throws java.io.
 meth public static java.lang.String encodeWord(java.lang.String,java.lang.String,java.lang.String) throws java.io.UnsupportedEncodingException
 meth public static java.lang.String fold(int,java.lang.String)
 meth public static java.lang.String getDefaultJavaCharset()
-meth public static java.lang.String getEncoding(javax.activation.DataHandler)
-meth public static java.lang.String getEncoding(javax.activation.DataSource)
+meth public static java.lang.String getEncoding(eu.ocathain.javax.activation.DataHandler)
+meth public static java.lang.String getEncoding(eu.ocathain.javax.activation.DataSource)
 meth public static java.lang.String javaCharset(java.lang.String)
 meth public static java.lang.String mimeCharset(java.lang.String)
 meth public static java.lang.String quote(java.lang.String,java.lang.String)
@@ -1339,7 +1339,7 @@ CLSS public javax.mail.util.ByteArrayDataSource
 cons public init(byte[],java.lang.String)
 cons public init(java.io.InputStream,java.lang.String) throws java.io.IOException
 cons public init(java.lang.String,java.lang.String) throws java.io.IOException
-intf javax.activation.DataSource
+intf eu.ocathain.javax.activation.DataSource
 meth public java.io.InputStream getInputStream() throws java.io.IOException
 meth public java.io.OutputStream getOutputStream() throws java.io.IOException
 meth public java.lang.String getContentType()

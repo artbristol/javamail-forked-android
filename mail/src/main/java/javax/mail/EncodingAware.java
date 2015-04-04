@@ -41,12 +41,12 @@
 package javax.mail;
 
 /**
- * A {@link javax.activation.DataSource DataSource} that also implements
+ * A {@link eu.ocathain.javax.activation.DataSource DataSource} that also implements
  * <code>EncodingAware</code> may specify the Content-Transfer-Encoding
  * to use for its data.  Valid Content-Transfer-Encoding values specified
  * by RFC 2045 are "7bit", "8bit", "quoted-printable", "base64", and "binary".
  * <p>
- * For example, a {@link javax.activation.FileDataSource FileDataSource}
+ * For example, a {@link eu.ocathain.javax.activation.FileDataSource FileDataSource}
  * could be created that forces all files to be base64 encoded:
  * <blockquote><pre>
  *  public class Base64FileDataSource extends FileDataSource

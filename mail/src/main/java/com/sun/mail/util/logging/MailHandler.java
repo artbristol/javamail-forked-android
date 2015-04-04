@@ -53,7 +53,7 @@ import java.security.PrivilegedAction;
 import java.util.*;
 import java.util.logging.*;
 import java.util.logging.Formatter;
-import javax.activation.*;
+import eu.ocathain.javax.activation.*;
 import javax.mail.*;
 import javax.mail.internet.*;
 import javax.mail.util.ByteArrayDataSource;

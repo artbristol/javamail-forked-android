@@ -41,7 +41,7 @@
 package javax.mail.internet;
 
 import javax.mail.*;
-import javax.activation.*;
+import eu.ocathain.javax.activation.*;
 import java.io.*;
 import java.util.*;
 import com.sun.mail.util.*;
@@ -563,11 +563,11 @@ public class MimeBodyPart extends BodyPart implements MimePart {
      * @return 		an InputStream
      * @exception       IOException this is typically thrown by the
      *			DataHandler. Refer to the documentation for
-     *			javax.activation.DataHandler for more details.
+     *			eu.ocathain.javax.activation.DataHandler for more details.
      * @exception	MessagingException for other failures
      *
      * @see	#getContentStream
-     * @see 	javax.activation.DataHandler#getInputStream
+     * @see 	eu.ocathain.javax.activation.DataHandler#getInputStream
      */
     public InputStream getInputStream() 
 		throws IOException, MessagingException {
@@ -646,7 +646,7 @@ public class MimeBodyPart extends BodyPart implements MimePart {
      * @return          Object
      * @exception       IOException this is typically thrown by the
      *			DataHandler. Refer to the documentation for
-     *			javax.activation.DataHandler for more details.
+     *			eu.ocathain.javax.activation.DataHandler for more details.
      * @exception       MessagingException for other failures
      */  
     public Object getContent() throws IOException, MessagingException {
@@ -952,9 +952,9 @@ public class MimeBodyPart extends BodyPart implements MimePart {
      *
      * @exception IOException	if an error occurs writing to the
      *				stream or if an error is generated
-     *				by the javax.activation layer.
+     *				by the eu.ocathain.javax.activation layer.
      * @exception MessagingException for other failures
-     * @see javax.activation.DataHandler#writeTo
+     * @see eu.ocathain.javax.activation.DataHandler#writeTo
      */
     public void writeTo(OutputStream os)
 				throws IOException, MessagingException {

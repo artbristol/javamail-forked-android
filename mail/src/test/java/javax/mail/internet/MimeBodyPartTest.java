@@ -43,7 +43,7 @@ package javax.mail.internet;
 import java.io.*;
 import java.util.Properties;
 
-import javax.activation.DataHandler;
+import eu.ocathain.javax.activation.DataHandler;
 
 import javax.mail.*;
 

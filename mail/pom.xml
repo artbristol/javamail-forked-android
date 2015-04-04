@@ -85,7 +85,7 @@
 	</findbugs.skip>
 	<findbugs.exclude>
 	    ${project.basedir}/exclude.xml
-	</findbugs.exclude>
+	</findbugs.exclude	>
     </properties>
 
     <build>
@@ -142,6 +142,8 @@
 			<include>**/*Test.java</include>
 			<include>**/*TestSuite.java</include>
 		    </includes>
+			<!-- Uncomment to try (and fail) to debug classloading issues -->
+			<!--<argLine>-verbose:class</argLine>-->
 		</configuration>
 	    </plugin>
 	</plugins>

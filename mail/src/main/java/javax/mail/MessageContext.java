@@ -50,8 +50,8 @@ package javax.mail;
  * context in which a data content object is operating.
  *
  * @see javax.mail.MessageAware
- * @see javax.activation.DataSource
- * @see javax.activation.DataContentHandler
+ * @see eu.ocathain.javax.activation.DataSource
+ * @see eu.ocathain.javax.activation.DataContentHandler
  * @since	JavaMail 1.1
  */
 public class MessageContext {

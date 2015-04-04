@@ -42,7 +42,7 @@ package com.sun.mail.mbox;
 
 import javax.mail.*;
 import javax.mail.internet.*;
-import javax.activation.*;
+import eu.ocathain.javax.activation.*;
 import java.io.*;
 
 /**
@@ -306,8 +306,8 @@ public class SunV3BodyPart extends MimeBodyPart {
      * @exception MessagingException
      * @exception IOException	if an error occurs writing to the
      *				stream or if an error is generated
-     *				by the javax.activation layer.
-     * @see javax.activation.DataHandler#writeTo()
+     *				by the eu.ocathain.javax.activation layer.
+     * @see eu.ocathain.javax.activation.DataHandler#writeTo()
      */
     public void writeTo(OutputStream os)
 				throws IOException, MessagingException {

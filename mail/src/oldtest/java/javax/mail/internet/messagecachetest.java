@@ -43,7 +43,7 @@ import java.io.*;
 import javax.mail.*;
 import javax.mail.event.*;
 import javax.mail.internet.*;
-import javax.activation.*;
+import eu.ocathain.javax.activation.*;
 
 /*
  * Test IMAP message cache.
