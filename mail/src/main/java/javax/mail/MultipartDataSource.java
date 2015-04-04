@@ -44,7 +44,7 @@ import java.util.Vector;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.IOException;
-import javax.activation.DataSource;
+import eu.ocathain.javax.activation.DataSource;
 
 /**
  * MultipartDataSource is a <code>DataSource</code> that contains body
@@ -60,7 +60,7 @@ import javax.activation.DataSource;
  * preparse multipart bodies, for example an IMAP provider.
  *
  * @author	John Mani
- * @see		javax.activation.DataSource
+ * @see		eu.ocathain.javax.activation.DataSource
  */
 
 public interface MultipartDataSource extends DataSource {

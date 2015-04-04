@@ -87,9 +87,9 @@ public class PreencodedMimeBodyPart extends MimeBodyPart {
      *
      * @exception IOException	if an error occurs writing to the
      *				stream or if an error is generated
-     *				by the javax.activation layer.
+     *				by the eu.ocathain.javax.activation layer.
      * @exception MessagingException for other failures
-     * @see javax.activation.DataHandler#writeTo
+     * @see eu.ocathain.javax.activation.DataHandler#writeTo
      */
     public void writeTo(OutputStream os)
 			throws IOException, MessagingException {

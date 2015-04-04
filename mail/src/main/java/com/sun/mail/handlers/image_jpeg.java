@@ -40,19 +40,20 @@
 
 package com.sun.mail.handlers;
 
-import java.awt.datatransfer.DataFlavor;
-import javax.activation.*;
+import eu.ocathain.awt.datatransfer.DataFlavor;
+import eu.ocathain.javax.activation.*;
 
 /**
+ * Eviscerated because of AWT dependencies.
  * DataContentHandler for image/jpeg.
  */
-public class image_jpeg extends image_gif {
-    private static ActivationDataFlavor myDF = new ActivationDataFlavor(
-	java.awt.Image.class,
-	"image/jpeg",
-	"JPEG Image");
-
-    protected ActivationDataFlavor getDF() {
-	return myDF;
-    }
+public class image_jpeg  {// extends image_gif {
+//    private static ActivationDataFlavor myDF = new ActivationDataFlavor(
+//	eu.ocathain.awt.Image.class,
+//	"image/jpeg",
+//	"JPEG Image");
+//
+//    protected ActivationDataFlavor getDF() {
+//	return myDF;
+//    }
 }

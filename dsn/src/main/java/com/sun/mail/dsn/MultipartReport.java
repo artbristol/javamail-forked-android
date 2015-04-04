@@ -43,7 +43,7 @@ package com.sun.mail.dsn;
 import java.io.*;
 import java.util.Vector;
 
-import javax.activation.*;
+import eu.ocathain.javax.activation.*;
 import javax.mail.*;
 import javax.mail.internet.*;
 

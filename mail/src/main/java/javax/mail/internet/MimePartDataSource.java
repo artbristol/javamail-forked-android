@@ -41,7 +41,7 @@
 package javax.mail.internet;
 
 import javax.mail.*;
-import javax.activation.*;
+import eu.ocathain.javax.activation.*;
 import java.io.*;
 import java.net.UnknownServiceException;
 import com.sun.mail.util.PropUtil;
@@ -52,7 +52,7 @@ import com.sun.mail.util.FolderClosedIOException;
  * a MimePart. This class is primarily meant for service providers.
  *
  * @see		javax.mail.internet.MimePart
- * @see		javax.activation.DataSource
+ * @see		eu.ocathain.javax.activation.DataSource
  * @author 	John Mani
  */
 

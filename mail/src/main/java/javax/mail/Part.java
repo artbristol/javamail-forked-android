@@ -42,7 +42,7 @@ package javax.mail;
 
 import java.io.*;
 import java.util.Enumeration;
-import javax.activation.DataHandler;
+import eu.ocathain.javax.activation.DataHandler;
 
 /**
  * The <code>Part</code> interface is the common base interface for 
@@ -68,7 +68,7 @@ import javax.activation.DataHandler;
  * <ul>
  * <li> As a DataHandler - using the <code>getDataHandler()</code> method.
  * The "content" of a Part is also available through a 
- * <code>javax.activation.DataHandler</code> object. The DataHandler 
+ * <code>eu.ocathain.javax.activation.DataHandler</code> object. The DataHandler
  * object allows clients to discover the operations available on the
  * content, and to instantiate the appropriate component to perform
  * those operations. 
@@ -133,7 +133,7 @@ public interface Part {
      *
      * @return		The ContentType of this part
      * @exception	MessagingException for failures
-     * @see		javax.activation.DataHandler
+     * @see		eu.ocathain.javax.activation.DataHandler
      */
     public String getContentType() throws MessagingException;
 
@@ -265,10 +265,10 @@ public interface Part {
      * @return an InputStream
      * @exception	IOException this is typically thrown by the 
      *			DataHandler. Refer to the documentation for 
-     *			javax.activation.DataHandler for more details.
+     *			eu.ocathain.javax.activation.DataHandler for more details.
      * @exception	MessagingException for other failures
      * @see #getDataHandler
-     * @see javax.activation.DataHandler#getInputStream
+     * @see eu.ocathain.javax.activation.DataHandler#getInputStream
      */
     public InputStream getInputStream() 
 		throws IOException, MessagingException;
@@ -297,10 +297,10 @@ public interface Part {
      * @return		Object
      * @exception	IOException this is typically thrown by the 
      *			DataHandler. Refer to the documentation for 
-     *			javax.activation.DataHandler for more details.
+     *			eu.ocathain.javax.activation.DataHandler for more details.
      * @exception 	MessagingException for other failures
      *
-     * @see javax.activation.DataHandler#getContent
+     * @see eu.ocathain.javax.activation.DataHandler#getContent
      */
     public Object getContent() throws IOException, MessagingException;
 
@@ -379,11 +379,11 @@ public interface Part {
      * @param	os	the stream to write to
      * @exception IOException		if an error occurs writing to the 
      *					stream or if an error is generated
-     *					by the javax.activation layer.
+     *					by the eu.ocathain.javax.activation layer.
      * @exception MessagingException	if an error occurs fetching the
      *					data to be written
      *
-     * @see javax.activation.DataHandler#writeTo
+     * @see eu.ocathain.javax.activation.DataHandler#writeTo
      */
     public void writeTo(OutputStream os) throws IOException, MessagingException;
 

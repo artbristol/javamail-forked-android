@@ -44,7 +44,7 @@ import java.io.*;
 import java.util.Properties;
 import java.util.Enumeration;
 
-import javax.activation.DataHandler;
+import eu.ocathain.javax.activation.DataHandler;
 
 import javax.mail.*;
 import static javax.mail.Message.RecipientType.*;

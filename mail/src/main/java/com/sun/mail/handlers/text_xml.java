@@ -40,13 +40,13 @@
 
 package com.sun.mail.handlers;
 
-import java.awt.datatransfer.DataFlavor;
+import eu.ocathain.awt.datatransfer.DataFlavor;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import javax.activation.ActivationDataFlavor;
-import javax.activation.DataContentHandler;
-import javax.activation.DataSource;
+import eu.ocathain.javax.activation.ActivationDataFlavor;
+import eu.ocathain.javax.activation.DataContentHandler;
+import eu.ocathain.javax.activation.DataSource;
 import javax.mail.internet.ContentType;
 import javax.mail.internet.ParseException;
 import javax.xml.transform.Source;

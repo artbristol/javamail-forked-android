@@ -33,7 +33,7 @@ import java.util.*;
 import java.io.*;
 import javax.mail.*;
 import javax.mail.internet.*;
-import javax.activation.*;
+import eu.ocathain.javax.activation.*;
 
 /**
  * msgmultisendsample creates a simple multipart/mixed message and sends it.

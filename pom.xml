@@ -175,7 +175,9 @@
 	    <modules>
 		<module>mbox</module>
 		<module>demo</module>
-		<module>client</module>
+
+		<!-- Removed due to heavy AWT dependency -->
+		<!--<module>client</module>-->
 		<module>servlet</module>
 		<module>webapp</module>
 		<module>taglib</module>

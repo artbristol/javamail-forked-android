@@ -46,7 +46,7 @@ import java.util.*;
 
 import javax.mail.*;
 import javax.mail.internet.*;
-import javax.activation.*;
+import eu.ocathain.javax.activation.*;
 
 import com.sun.mail.util.*;
 import com.sun.mail.iap.*;

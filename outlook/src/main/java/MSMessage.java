@@ -32,7 +32,7 @@
 import java.io.*;
 import javax.mail.*;
 import javax.mail.internet.*;
-import javax.activation.*;
+import eu.ocathain.javax.activation.*;
 
 /**
  * This class models a UUEncoded Message sent from MS Outlook etc. <p>

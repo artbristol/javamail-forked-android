@@ -33,7 +33,7 @@ import java.util.*;
 import java.io.*;
 import javax.mail.*;
 import javax.mail.event.*;
-import javax.activation.*;
+import eu.ocathain.javax.activation.*;
 
 import com.sun.mail.imap.*;
 

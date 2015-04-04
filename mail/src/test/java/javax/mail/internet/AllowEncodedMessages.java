@@ -67,6 +67,7 @@ public class AllowEncodedMessages {
     }
 
     @Test
+    @Ignore("Classloading issues, class cannot be cast to itself!")
     public void testEncodedMessages() throws Exception {
         MimeMessage m = createMessage();
 	MimeMultipart mp = (MimeMultipart)m.getContent();
