@@ -50,7 +50,7 @@
 	<artifactId>all</artifactId>
 	<version>1.5.2</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>  
     <groupId>eu.ocathain.com.sun.mail</groupId>
     <artifactId>outlook</artifactId>
     <packaging>jar</packaging>
